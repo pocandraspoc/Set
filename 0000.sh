@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./0010.sh
+./java.sh
 ./git.sh
 ./google.sh
 ./virtualbox.sh
