@@ -7,3 +7,6 @@
 ./skype.sh
 ./ruby.sh
 ./subl.sh
+./tools.sh
+./r.sh
+./docker.sh
