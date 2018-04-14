@@ -76,9 +76,6 @@ java_in(){
 	apt-get -y install oracle-java8-installer 
 
 }
-jdk_in(){
-	apt-get install default-jdk -y
-}
 java_conf(){
 	NOTE="Set Java_HOME envir var correctly"
 	export JAVA_HOME=`type -p javac|xargs readlink -f|xargs dirname|xargs dirname`
@@ -120,7 +117,6 @@ java_new(){
 	rm_java
 	java_in
 	java_conf
-	jdk_in
 	echo "Totaly Purge, Install and Conf Java"
 }
 
