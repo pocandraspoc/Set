@@ -35,6 +35,7 @@ rm_java(){
 }
 
 rm_j_pack(){
+	apt-get install tree -y
 	NOTE="Remove all the Java related packages (Sun, Oracle, OpenJDK, IcedTea plugins, GIJ):"
 	dpkg-query -W -f='${binary:Package}\n' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e '^java-common' | xargs apt-get -y remove
 	apt-get -y autoremove
@@ -75,9 +76,6 @@ java_in(){
 	
 	apt-get -y install oracle-java8-installer 
 
-}
-jdk_in(){
-	apt-get install default-jdk -y
 }
 java_conf(){
 	NOTE="Set Java_HOME envir var correctly"
@@ -120,7 +118,6 @@ java_new(){
 	rm_java
 	java_in
 	java_conf
-	jdk_in
 	echo "Totaly Purge, Install and Conf Java"
 }
 

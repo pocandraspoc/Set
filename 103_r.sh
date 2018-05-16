@@ -17,6 +17,7 @@ rstud_in(){
 	wget https://download1.rstudio.org/rstudio-1.0.143-amd64.deb
 	gdebi -n rstudio-1.0.143-amd64.deb
 	rm rstudio-1.0.143-amd64.deb
+	#R CMD javareconf
 }
 
 r_r(){
