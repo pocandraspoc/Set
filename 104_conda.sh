@@ -6,7 +6,7 @@ conda_in(){
 	rm Anaconda3-5.1.0-Linux-x86_64.sh -f
 	echo 'PATH=$HOME/anaconda3/bin:$PATH' >> ~/.bashrc
 	source ~/.bashrc
-	
+	shutdown now
 	#conda create --name insta python=3.6 pip -y
 }
 

@@ -13,7 +13,6 @@ languages(){
 	./101_ruby.sh
 	./102_jdk.sh	
 	./103_r.sh
-	./104_conda.sh
 	./105_scala.sh
 	./000_reboot.sh
 	
@@ -25,14 +24,21 @@ tools(){
 	./202_vlc.sh
 	./203_nano.sh
 	./204_docker.sh
-	./205_kafka.sh
+	./000_reboot.sh
+	
 
 }
 
+by_user(){
+	#./104_conda.sh
+	#./205_kafka.sh
+}
+
 main(){
-	config
+	#config
 	#languages
 	#tools
+	#by_user
 }
 
 main
