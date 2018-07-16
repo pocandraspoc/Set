@@ -1,5 +1,5 @@
 {
-    "cmd": ["/home/my/.conda/envs/insta/bin/python", "-u", "$file"],
+    "cmd": ["/home/my/anaconda3/envs/insta/bin/python3", "-u", "$file"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "selector": "source.python"
 }
