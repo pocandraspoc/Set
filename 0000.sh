@@ -38,7 +38,7 @@ main(){
 	#config
 	#languages
 	#tools
-	#by_user
+	by_user
 }
 
 main
