@@ -9,7 +9,7 @@ kafka_in(){
 
 }
 
-conda create --name insta python=3.6 pip -y
+#conda create --name insta python=3.6 pip -y
 kafka_in
 
 #$HOME
