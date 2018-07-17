@@ -31,7 +31,7 @@ tools(){
 
 by_user(){
 	./104_conda.sh
-	#./205_kafka.sh
+	./205_kafka.sh
 }
 
 main(){
