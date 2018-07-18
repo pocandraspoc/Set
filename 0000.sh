@@ -24,6 +24,7 @@ tools(){
 	./202_vlc.sh
 	./203_nano.sh
 	./204_docker.sh
+	./206_tor.sh
 	./000_reboot.sh
 	
 
@@ -38,7 +39,7 @@ main(){
 	#config
 	#languages
 	#tools
-	by_user
+	#by_user
 }
 
 main
