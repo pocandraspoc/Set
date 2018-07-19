@@ -37,11 +37,11 @@ other_in(){
 openGL_in
 other_in
 
-apt-get install libpng-dev libjpeg-dev libxxf86vm1 libxxf86vm-dev libxi-dev libxrandr-dev
-apt-get install mesa-common-dev
-apt-get mesa-utils-extra libgl1-mesa-dev libglapi-mesa
+apt-get install libpng-dev libjpeg-dev libxxf86vm1 libxxf86vm-dev libxi-dev libxrandr-dev -y
+apt-get install mesa-common-dev -y
+apt-get mesa-utils-extra libgl1-mesa-dev libglapi-mesa sqlite3 -y
 
-sqlite3
+
 
 #https://github.com/naelstrof/slop/issues/44
 
