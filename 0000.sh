@@ -5,7 +5,7 @@ config(){
 	./002_git.sh
 	./003_virtualbox.sh
 	./004_subl.sh
-	./000_reboot.sh
+	#./000_reboot.sh
 }
 
 
@@ -15,7 +15,7 @@ languages(){
 	./103_r.sh
 	./104_OpenGL.sh
 	./105_scala.sh
-	./000_reboot.sh
+	#./000_reboot.sh
 	
 
 }
@@ -26,7 +26,7 @@ tools(){
 	./203_nano.sh
 	./204_docker.sh
 	./205_tor.sh
-	./000_reboot.sh
+	#./000_reboot.sh
 	
 
 }
@@ -37,10 +37,10 @@ by_user(){
 }
 
 main(){
-	#config
-	#languages
-	#tools
-	#by_user
+	config
+	languages
+	tools
+	by_user
 }
 
 main
