@@ -4,7 +4,7 @@
 #apt-get update
 #apt-get install pv -y
 #openssl enc -aes-256-ctr -pass pass:"$(dd if=/dev/urandom bs=128 count=1 2>/dev/null | base64)" -nosalt < /dev/zero | pv -pterb -s $(sudo blockdev --getsize64 /dev/sda) | sudo dd of=/dev/sdb bs=1M
-
+#python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 sdate(){
 	SSTR="Start Time:"
 	SDATE=$(date)
